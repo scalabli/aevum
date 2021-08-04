@@ -1,6 +1,6 @@
 """
-Implements the :class:`ArrowFactory <arrow.factory.ArrowFactory>` class,
-providing factory methods for common :class:`Arrow <arrow.arrow.Arrow>`
+Implements the :class:`AevumFactory` class,
+providing factory methods for common :class:`Aevum <arrow.arrow.Arrow>`
 construction scenarios.
 
 """
@@ -14,14 +14,14 @@ from typing import Any, List, Optional, Tuple, Type, Union, overload
 
 from dateutil import tz as dateutil_tz
 
-from arrow import parser
-from arrow.arrow import TZ_EXPR, Arrow
-from arrow.constants import DEFAULT_LOCALE
-from arrow.util import is_timestamp, iso_to_gregorian
+from aevum import parser
+from aevum.core import TZ_EXPR, Arrow
+from aevum.constants import DEFAULT_LOCALE
+from aevum.util import is_timestamp, iso_to_gregorian
 
 
-class ArrowFactory:
-    """A factory for generating :class:`Arrow <arrow.arrow.Arrow>` objects.
+class AevumFactory:
+    """A factory for generating :class:`Format’ objects.
 
     :param type: (optional) the :class:`Arrow <arrow.arrow.Arrow>`-based class to construct from.
         Defaults to :class:`Arrow <arrow.arrow.Arrow>`.
