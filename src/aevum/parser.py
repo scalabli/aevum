@@ -24,9 +24,9 @@ from typing import (
 
 from dateutil import tz
 
-from arrow import locales
-from arrow.constants import DEFAULT_LOCALE
-from arrow.util import next_weekday, normalize_timestamp
+from aevum import locales
+from aevum.constants import DEFAULT_LOCALE
+from aevum.util import next_weekday, normalize_timestamp
 
 if sys.version_info < (3, 8):  # pragma: no cover
     from typing_extensions import Literal, TypedDict
