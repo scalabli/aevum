@@ -1,7 +1,5 @@
 """
-Provides the :class:`Arrow <Aevum.arrow.Arrow>` class, an enhanced ``datetime``
-replacement.
-
+Enhanced ``datetime`` replacement.
 """
 
 
@@ -32,7 +30,7 @@ from typing import (
 from dateutil import tz as dateutil_tz
 from dateutil.relativedelta import relativedelta
 
-from arrow import formatter, locales, parser, util
+from aevum import formatter, locales, parser, util
 from aevum.constants import DEFAULT_LOCALE, DEHUMANIZE_LOCALES
 from aevum.locales import TimeFrameLiteral
 
@@ -179,7 +177,7 @@ class Aevum:
 
     @classmethod
     def now(cls, tzinfo: Optional[dt_tzinfo] = None) -> "Arrow":
-        """Constructs an :class:`Arrow <Aevum.arrow.Arrow>` object, representing "now" in the given
+        """Constructs an :class: ’Aevum` object, representing "now" in the given
         timezone.
 
         :param tzinfo: (optional) a ``tzinfo`` object. Defaults to local time.
@@ -209,7 +207,7 @@ class Aevum:
         )
 
     @classmethod
-    def utc(cls) -> "Arrow":
+    def utc(cls) -> "Aevum":
         """Constructs an :class:`Arrow <Aevum.arrow.Arrow>` object, representing "now" in UTC
         time.
 
