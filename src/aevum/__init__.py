@@ -37,3 +37,7 @@ __all__ = [
     "FORMAT_W3C",
     "ParserError",
 ]
+
+
+
+__version__ = "2021.1"
