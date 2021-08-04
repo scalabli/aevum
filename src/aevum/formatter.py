@@ -7,8 +7,8 @@ from typing import Optional, Pattern, cast
 
 from dateutil import tz as dateutil_tz
 
-from arrow import locales
-from arrow.constants import DEFAULT_LOCALE
+from aevum import locales
+from aevum.constants import DEFAULT_LOCALE
 
 if sys.version_info < (3, 8):  # pragma: no cover
     from typing_extensions import Final
