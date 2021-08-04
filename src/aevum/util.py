@@ -2,10 +2,11 @@
 
 import datetime
 from typing import Any, Optional, cast
+from quo import echo
 
 from dateutil.rrule import WEEKLY, rrule
 
-from arrow.constants import (
+from aevum.constants import (
     MAX_ORDINAL,
     MAX_TIMESTAMP,
     MAX_TIMESTAMP_MS,
@@ -53,7 +54,7 @@ def is_timestamp(value: Any) -> bool:
         return False
     try:
         float(value)
-        return True
+        return echo(f"The input is a valid timestamp", fg="cyan")
     except ValueError:
         return False
 
