@@ -1,7 +1,7 @@
 from ._version import __version__
 from .api import get, now, utc
 from .aevum import Format
-from .factory import ArrowFactory
+from .factory import AevumFactory
 from .formatter import (
     FORMAT_ATOM,
     FORMAT_COOKIE,
@@ -24,7 +24,7 @@ __all__ = [
     "now",
     "utc",
     "Format",
-    "ArrowFactory",
+    "AevumFactory",
     "FORMAT_ATOM",
     "FORMAT_COOKIE",
     "FORMAT_RFC822",
