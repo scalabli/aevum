@@ -1,6 +1,5 @@
 """
-Provides the default implementation of :class:`ArrowFactory <arrow.factory.ArrowFactory>`
-methods for use as a module API.
+Provides the default implementation of :class: ’AevumFactory’
 
 """
 
